@@ -1,0 +1,231 @@
+/* reset css */
+* {
+  box-sizing: border-box;
+}
+html,
+body,
+ul,
+h1{
+  margin: 0;
+  padding: 0;
+  font-family: 'Noto Sans TC', sans-serif;
+}
+
+html,
+body, 
+.page {
+  height: 100%;
+  position: relative;
+}
+
+/* common css */
+a {
+  text-decoration: none;
+}
+
+ul,
+ul>li {
+  list-style: none;
+  margin: 0 auto;
+}
+
+.clearfix:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+/* page css */    
+.page {
+  position: relative;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.tabs {
+  position: absolute;
+  bottom: 0;
+  width:100%;
+  background: #eee;
+}
+
+.tabs ul>li{
+  cursor: pointer;
+  padding: 5px;
+  width: 33.33%;
+}
+
+.tabs ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  text-align:center;
+}    
+
+.page .content {
+  height: calc(100% - 70px);
+  overflow-y: scroll;    
+  padding: 5px;
+}    
+
+.page .content {
+  display: none;
+}
+
+.page .content-acitve {
+  display: block;
+}
+
+.tab-icon {
+  font-size: 30px;
+}
+
+.tabs span:last-of-type {
+  font-size: 16px;
+}
+
+.tab-active {
+  color:#760EF4;
+  transition: all ease .2s;
+}
+
+
+.tab-icon {
+  display: block;
+}
+
+.content h2 {
+  padding: 0 0 0 10px;
+  margin: 0;
+}
+
+.content .items {
+  position: relative;
+  display: flex;
+  margin-left: 10px;
+  padding: 5px 0;
+  border-bottom: 1px solid #ccc;
+  color: #999;
+}
+
+.items .index {
+  display: flex;
+  align-items: center;
+}
+
+.index span {
+  background: #760EF4;      
+  padding: 0px 10px;
+  color: #fff;
+}
+
+.items .detail {
+  margin: 0 15px;
+  
+}
+.items .name {
+  font-weight: bolder;
+  font-size:20px;
+  color: #333;
+  line-height: 1.1;
+}
+
+.name:hover {
+  color:#760EF4;
+}
+.items .description {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+.count {
+  position:absolute;
+  right:5px;
+  top: -1px;
+}
+
+.count span {
+  font-size: 12px;
+  margin-right: 5px;
+  padding: 0px 6px;
+  background: #aaa;
+  border-radius: 15px;
+  color: white;
+  opacity: .7;
+  box-shadow: 0px 0px 3px 1px rgba(1,1,1,.5);
+}
+
+.loading {
+  text-align:center;
+  display: none;
+}
+
+.loading span {
+ font-size:20px;
+ color:#760EF4;
+ display: inline-block;
+ animation: 1.2s rotate linear infinite;
+}
+
+@keyframes rotate {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg);  }
+}
+
+.avatar img{
+  width: 55px;
+  border-radius: 5px;
+}
+
+.login {
+  padding-left: 10px;
+}
+.searchBar {
+  margin-left:10px;
+  border-bottom:1px solid #ccc;
+  padding-bottom: 10px;
+  position:relative;
+  display: flex;
+}
+
+.searchBar input[type=text] {
+  width: calc(100% - 100px);
+  padding: 5px 0 5px 10px;
+  font-size: 16px;
+  
+}
+.searchBar input[type=text]:focus {
+  outline:none;
+}
+.searchBar input[type=button]{
+  border: none;
+  background: #760EF4;
+  color: #fff;
+  font-size:20px;
+  width:100px;
+  padding:5px;
+  align-items: end;
+  cursor: pointer;
+}
+.searchBar input[type=button]:hover {
+  opacity: .5;
+  outline:none;
+}
+
+.top {
+  position: fixed;
+  bottom: 80px;
+  right:25px;
+  color:#fff;
+  background:#760EF4;
+  line-height:1;
+  padding:3px 5px;
+  text-align:center;
+  font-size:14px;
+  font-weight: bold;
+  border-radius: 3px;
+}

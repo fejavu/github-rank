@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <title>Github Rank</title>
+  <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="//at.alicdn.com/t/font_1208079_7b240qqb1zd.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="github.png" type="image/png" >
+</head>
+
+<body>
+  <div class="page" id="page">
+    <div class="content content-acitve">
+      <h2>Projects</h2>
+      <div class="container"></div>
+
+      <div class="loading">
+        <span class="iconfont icon-icon-loading"></span>
+      </div>
+    </div>
+    <div class="content ">
+      <h2>Engineers</h2>
+      <div class="container"></div>
+      <div class="loading">
+        <span class="iconfont icon-icon-loading"></span>
+      </div>
+    </div>
+    <div class="content ">
+      <h2>Search</h2>
+      <div class="searchBar">
+        <input type="text" placeholder="search repositories">
+        <input type="button" value="search">         
+      </div>
+
+      <div class="container"></div>
+
+      <div class="loading">
+        <span class="iconfont icon-icon-loading"></span>
+      </div>
+    </div>
+  </div>
+  <div class="tabs">
+    <ul>
+      <li class="proj tab-active">
+        <span class="tab-icon iconfont icon-git"></span>
+        <span>Projects</span>
+      </li>
+      <li class="engi">
+        <span class="tab-icon iconfont icon-icon-fe"></span>
+        <span>Engineers</span>
+      </li>
+      <li class="search">
+        <span class="tab-icon iconfont icon-search"></span>
+        <span>Search</span>
+      </li>
+    </ul>
+  </div>
+
+  <script src="//code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
